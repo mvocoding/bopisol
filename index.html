@@ -77,8 +77,15 @@
 						class="hidden md:inline-block h-full w-full" src="About.png" alt="" style="
     height: 1000px;
 "> <img class="inline-block md:hidden h-full w-full" src="About.png" alt="">
-					<div
-						class="z-[111] absolute bottom-5 sm:bottom-20 pt-[120px] sm:pt-0 left-0 z-10 w-full h-full flex flex-col gap-2 items-center justify-center">
+					<div class="" style="
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+">
 						<img class="relative top-10 sm:top-20 z-10 w-[200px] sm:w-full max-w-[400px]"
 							src="_app/immutable/assets/about.B-dwOWbO.png" alt="">
 						<div
@@ -176,10 +183,7 @@
 								class="bg-[#c2c3c52f] p-2 cursor-pointer hover:bg-[#c2c3c53c]"> </a><a
 								href="https://www.instagram.com/bookofPumpfluencer" target="_blank"
 								class="bg-[#c2c3c52f] p-2 cursor-pointer hover:bg-[#c2c3c53c]"> </a></div>
-					</div> <img class="absolute bottom-0 right-0 inline-block h-[350px] md:h-full"
-						src="_app/immutable/assets/frog.0CijuxVu.png" alt=""> <img
-						class="absolute bottom-0 left-0 inline-block h-[350px] md:h-[110%]"
-						src="_app/immutable/assets/dog.DWGHB07M.png" alt="">
+					</div> 
 				</section>
 			</div>
 		</main>
@@ -208,6 +212,46 @@
 			}
 		</script>
 	</div>
+
+	<!-- Code injected by live-server -->
+	<script>
+		// <![CDATA[  <-- For SVG support
+		if ('WebSocket' in window) {
+			(function () {
+				function refreshCSS() {
+					var sheets = [].slice.call(document.getElementsByTagName("link"));
+					var head = document.getElementsByTagName("head")[0];
+					for (var i = 0; i < sheets.length; ++i) {
+						var elem = sheets[i];
+						var parent = elem.parentElement || head;
+						parent.removeChild(elem);
+						var rel = elem.rel;
+						if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+							var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+							elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+						}
+						parent.appendChild(elem);
+					}
+				}
+				var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+				var address = protocol + window.location.host + window.location.pathname + '/ws';
+				var socket = new WebSocket(address);
+				socket.onmessage = function (msg) {
+					if (msg.data == 'reload') window.location.reload();
+					else if (msg.data == 'refreshcss') refreshCSS();
+				};
+				if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+					console.log('Live reload enabled.');
+					sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+				}
+			})();
+		}
+		else {
+			console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		}
+		// ]]>
+	</script>
+
 
 </body>
 
