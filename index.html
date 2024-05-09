@@ -10,6 +10,26 @@
 	<meta name="description" content="Book of Pumpfluencer - All Influencers, One Book, It's $BOPI">
 	<meta name="keywords" content="Book of Pumpfluencer">
 	<meta name="author" content="Book of Pumpfluencer">
+
+	<style>
+		#showbox {
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@media (max-width: 768px) {
+			#showbox {
+				right: 50%;
+				transform: translateX(50%);
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -57,7 +77,8 @@
 					<div class="relative left flex items-center gap-1 uppercase"> <a
 							href="https://raydium.io/swap/?outputCurrency=D1qQSEBropPHtQza4QN813WNr9pHHQzpZaxjjC7DFAeE"
 							target="_blank"
-							class="bg-[#9701d2] px-7 py-2 hover:bg-[#81409b] text-black hover:text-white font-[Bakbak] transition-all text-[16px] ">BUY</a></div>
+							class="bg-[#9701d2] px-7 py-2 hover:bg-[#81409b] text-black hover:text-white font-[Bakbak] transition-all text-[16px] ">BUY</a>
+					</div>
 				</div>
 				<div id="overlay" class="fixed left-0 top-0 hidden w-screen h-screen bg-[#0000004e] svelte-8caqle">
 				</div>
@@ -84,37 +105,18 @@
 "> <img class="inline-block md:hidden h-full w-full" src="About.png" alt="" style="
     height: 500px;
 ">
-					<style>
-						#showbox {
-							position: absolute;
-							right: 0;
-							top: 0;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-							justify-content: center;
-						}
-
-						/* Responsive styles for mobile screens */
-						@media (max-width: 768px) {
-							#showbox {
-								right: 50%;
-								/* Center right edge to the middle of the screen */
-								transform: translateX(50%);
-								/* Shift it back by half its own width */
-								width: 100%;
-								/* Full width */
-							}
-						}
-					</style>
 					<div id="showbox">
 						<img class="relative top-10 sm:top-20 z-10 w-[200px] sm:w-full max-w-[400px]"
 							src="_app/immutable/assets/about.B-dwOWbO.png" alt="">
 						<div
 							class="mt-5 relative space-y-4 w-[600px] max-w-[90%] px-5 pt-8 sm:pt-14 pb-8 bg-[#271a5c99] font-[Poppins] text-[10px] sm:text-[16px] text-center border-[6px] border-[#D178BE] rounded-[25px] box-border">
-							<p data-svelte-h="svelte-tzr6ek">Looking to get ahead? Join $BOPI for the inside track on crypto success</p>
-							<p data-svelte-h="svelte-yr7kuo">We're building more than a token — we're creating a movement powered by the energy of memes and a strong community</p>
-							<p data-svelte-h="svelte-13xuusd">Connect with top influencers with the Book Of Pumpfluencer, hear their stories, and learn how we're shaping the future of crypto together. We're not just following the trends, we're making them</p>
+							<p data-svelte-h="svelte-tzr6ek">Looking to get ahead? Join $BOPI for the inside track on
+								crypto success</p>
+							<p data-svelte-h="svelte-yr7kuo">We're building more than a token — we're creating a
+								movement powered by the energy of memes and a strong community</p>
+							<p data-svelte-h="svelte-13xuusd">Connect with top influencers with the Book Of
+								Pumpfluencer, hear their stories, and learn how we're shaping the future of crypto
+								together. We're not just following the trends, we're making them</p>
 							<strong style="
     display: inline-block;
     margin-top: 22px !important;
@@ -133,7 +135,8 @@
 						</div>
 					</div>
 				</section>
-				<section id="NFT" class="relative font-[Poppins] text-white" style="padding-top:100px" data-svelte-h="svelte-obrsyx">
+				<section id="NFT" class="relative font-[Poppins] text-white" style="padding-top:100px"
+					data-svelte-h="svelte-obrsyx">
 					<div class="w-full flex flex-col gap-2 items-center justify-center">
 						<h1 class="text-[35px] md:text-[50px] font-bold">How to buy $BOPI</h1>
 						<div class="w-full flex flex-col items-center gap-0 sm:gap-10 mt-6">
@@ -211,8 +214,6 @@
 			}
 		</script>
 	</div>
-
-
 </body>
 
 </html>
